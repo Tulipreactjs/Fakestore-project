@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fakestore</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="main-container d-flex flex-column">
+      <div class="first-section vh-100">
+        <header class="header">
+          <nav class="nav">
+            <div class="MODAL-MAIN d-lg-none d-md-none">
+              <!-- Modal Button -->
+              <button
+                type="button"
+                class="btn d-lg-none"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <i class="modal-btn bi bi-list"></i>
+              </button>
+              <!-- Modal -->
+
+              <div id="boot-strap-modal"></div>
+            </div>
+            <div class="navDiv-1"></div>
+            <div class="navDiv-2">
+              <a class="cat-a2" href="#products-div">Products</a>
+            </div>
+
+            <!-- <i class="canvas-toggle bi bi-list" role="button"></i> -->
+          </nav>
+        </header>
+        <nav class="mobile-nav"></nav>
+        <div
+          class="maxPrice-container container-fluid d-flex flex-sm-column flex-lg-row align-items-lg-center gap-4 justify-content-lg-between justify-content-sm-center align-items-sm-start"
+        ></div>
+      </div>
+      <section class="second-section">
+        <h1 class="text-center pt-5">Top Rated</h1>
+
+        <div
+          class="topRated-div container d-flex flex-wrap pt-5 justify-content-md-between justify-content-sm-center"
+        ></div>
+      </section>
+      <div id="list-container">
+        <!-- List of items will be rendered here -->
+      </div>
+      
+      
+      <section class="third-section">
+        <div class="container-xl">
+          <h1 class="text-center pt-5">Products</h1>
+          <div
+            id="products-div"
+            class="mt-5 py-5 d-flex gap-4 flex-wrap pt-5 justify-content-lg-between justify-content-sm-center"
+          ></div>
+        </div>
+      </section>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./Fakestore.js"></script>
+    <script src="./jsroutetest.js"></script>
+  </body>
+</html>
